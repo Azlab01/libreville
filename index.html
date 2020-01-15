@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenue à Libreville</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop id="vid">
+            <source src="bg.mp4" type="video/mp4">
+        </video>
+        <h2 id="demo"></h2>
+        
+    </div>
+    <script src="main.js"></script>
+    <script>
+        // _(selector, speed, initialDelay)
+        _$("demo", 100, 800)
+            .type("L").wait(1000).speed(100)
+            .type("I").wait(1000).speed(100)
+            .type("B").wait(1000).speed(100)
+            .type("R").wait(1000).speed(100)
+            .type("E").wait(1000).speed(100)
+            .type("V").wait(1000).speed(100)
+            .type("I").wait(1000).speed(100)
+            .type("L").wait(1000).speed(100)
+            .type("L").wait(1000).speed(100)
+            .type("E").wait(1000).speed(100)
+            .lineBreak()
+            .type("Typing Javascript", { 
+                fontWeight: "bold", 
+                color: "black",
+            }).speed(40)
+            .delete("Javascript").wait(1000).speed(200)
+            .type("JS", { 
+                fontWeight: "bold", 
+                color: "black",
+            }).wait(1000)
+            .lineBreak();
+    </script>
+    
+</body>
+</html>
